@@ -1,0 +1,3 @@
+SELECT hospital.hospital_id AS ID,hospital_username FROM hospital
+ INNER JOIN bed ON hospital.hospital_id = bed.hospital_id WHERE hospital.hospital_username = '"+hospital_username+"'
+INSERT INTO bed (bed_category,bed_price,bed_count,bed_available) VALUES (?,?,?,?) SELECT hospital.hospital_id,hospital_username FROM hospital INNER JOIN bed ON hospital.hospital_id = bed.hospital_id WHERE hospital_username = '"+hospital_username+"' 
